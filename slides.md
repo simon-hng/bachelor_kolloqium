@@ -43,13 +43,23 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# Status
+# Feedback View Intro
+
+---
+
+# Feedback View Subsystem Decomposition
 
 ---
 layout: section
 ---
 
 # Live Demo
+
+## Feedback View
+
+---
+
+# Status
 
 ---
 

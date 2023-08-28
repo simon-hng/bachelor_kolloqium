@@ -3,8 +3,8 @@ import Layout from "./shared/layout.vue";
 </script>
 
 <template>
-  <Layout class="cover">
-    <div class="my-auto w-full">
+  <Layout class="slidev-layout">
+    <div class="my-auto">
       <slot />
     </div>
   </Layout>
