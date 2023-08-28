@@ -1,36 +1,28 @@
 ---
-theme: default
+theme: ./theme
 highlighter: shiki
 lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: Learning Analytics of Grading Programming Exercises
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
+<div class="grid grid-cols-2">
+    <div>
+        <h1>Learning Analytics of Grading Programming Exercises</h1>
+        <p class="text-[#0065bd] text-xl">Bachelor’s Thesis Intermediate Presentation</p>
+        <div class="my-12">
+            <p class="font-bold">Simon Huang and Lucas Welscher</p>
+        </div>
+        <p>
+            Technical University of Munich<br/>
+            School of Computation, Information and Technology<br/>
+            Chair for Applied Software Engineering<br/>
+            September 1<sup>st</sup>, 2023
+        </p>
+    </div>
+    <img src="assets/uhrenturm.png"/>
 </div>
 
 <!--
@@ -53,6 +45,8 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 # Status
 
+---
+layout: section
 ---
 
 # Live Demo
