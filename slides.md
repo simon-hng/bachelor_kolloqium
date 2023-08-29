@@ -36,7 +36,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 <div class="grid grid-cols-3 color-[#0065bd] items-center justify-center mt-32">
     <v-click>
         <div class="flex flex-col items-center">
-            <mdi-puzzle class="w-20 h-20"/>
+            <mdi-head-snowflake class="w-22 h-22"/>
             <p class="text-black">Student Understanding</p>
         </div>
     </v-click>
@@ -77,8 +77,16 @@ the required amount of information and detail
 - Automatic Grading Instructions
 
 ---
+layout: section
+---
 
-# Feedback View Previous System
+# Feedback View
+
+---
+level: 2
+---
+
+# Old view
 
 <div class="relative">
     <img src="assets/feedbackView.png"/>
@@ -96,16 +104,26 @@ the required amount of information and detail
 </div>
 
 ---
+level: 2
+---
 
-# Feedback View Subsystem Decomposition
+# Object design - Groups
+
+<!-- TODO: insert figure 3.7-->
+
+---
+level: 2
+---
+
+# Object design - Grouping and Sorting
+
+<!-- TODO: insert figure 3.6-->
 
 ---
  layout: section
 ---
 
 # Live Demo
-
-## Feedback View
 
 ---
 
