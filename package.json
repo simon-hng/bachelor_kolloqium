@@ -19,6 +19,7 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "playwright-chromium": "^1.37.1",
     "typescript": "*"
   }
 }

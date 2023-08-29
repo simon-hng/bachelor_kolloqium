@@ -5,3 +5,6 @@ dist
 index.html
 .remote-assets
 components.d.ts
+
+# pdf slides
+slides-export.pdf
