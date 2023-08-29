@@ -12,6 +12,7 @@
     "@slidev/theme-seriph": "latest"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.54",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^39.0.0",

@@ -70,9 +70,30 @@ the required amount of information and detail
 
 # Objectives
 
+- Feedback View
+- Programming Exercise Configuration Wizard
+- SCA Configuration Import
+- Task Grading Configuration
+- Automatic Grading Instructions
+
 ---
 
-# Feedback View Intro
+# Feedback View Previous System
+
+<div class="relative">
+    <img src="assets/feedbackView.png"/>
+    <svg class="absolute top-0 text-red" width="1132" height="503">
+        <v-click>
+            <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
+        </v-click>
+        <v-click>
+            <rect x="5" y="180" width="860" height="110" fill="none" stroke="currentColor" stroke-width="5"/>
+        </v-click>
+        <v-click>
+            <rect x="5" y="290" width="280" height="30" fill="none" stroke="currentColor" stroke-width="5"/>
+        </v-click>
+    </svg>
+</div>
 
 ---
 
