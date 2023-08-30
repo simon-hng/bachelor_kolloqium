@@ -26,7 +26,22 @@ title: Learning Analytics of Grading Programming Exercises
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+- Extended Artemis's capabilities and implementations of the concepts of learning analytics
+-->
+
+---
+layout: quote
+---
+
+## "Learning analytics is the practice of measuring, collecting, analyzing, and reporting data about learners and their learning environments to understand and optimize learning outcomes"
+
+First International Conference on Learning Analytics
+<sup>
+    <a class="text-xs" href="https://www.solaresearch.org/about/what-is-learning-analytics/">1</a>
+</sup>
+
+<!--
+- Add examples of learning analytics usages to notes
 -->
 
 ---
@@ -58,6 +73,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 - Understanding the grading from instructors and tutors is difficult for student
     - What does this feedback mean? What is the impact on my grade?
 - Configuring grading did not reflect the way instructors want to grade exercises
+    - Grading based on test cases was to granular and fine tuned
 - Overall too time consuming; Instructors where not able to easily create the amount of exercises with
 the required amount of information and detail
 -->
@@ -86,11 +102,11 @@ layout: section
 level: 2
 ---
 
-# Old view
+# Old View
 
 <div class="relative">
     <img src="/feedbackView.png"/>
-    <svg class="absolute top-0 text-red" width="1132" height="503">
+    <svg class="absolute top-0 text-red" width="1000" height="500">
         <v-click>
             <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
         </v-click>
@@ -102,6 +118,12 @@ level: 2
         </v-click>
     </svg>
 </div>
+
+---
+ layout: section
+---
+
+# Live Demo
 
 ---
 level: 2
@@ -151,14 +173,14 @@ initFeedbackInformation() {
 ```
 
 ---
- layout: section
----
-
-# Live Demo
-
----
 
 # Status
+
+#### Fully implemented
+
+- Feedback View ✅
+- Programming Exercise Configuration Wizard ✅
+- Task Grading Configuration ✅
 
 ---
 

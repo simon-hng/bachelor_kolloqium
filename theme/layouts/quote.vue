@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import Layout from "./shared/layout.vue";
+</script>
+
 <template>
-  <div class="slidev-layout quote">
-    <div class="my-auto">
+  <Layout class="quote">
+    <div>
       <slot />
     </div>
-  </div>
+  </Layout>
 </template>

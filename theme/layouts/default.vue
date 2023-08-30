@@ -3,7 +3,7 @@ import Layout from "./shared/layout.vue";
 </script>
 
 <template>
-  <Layout class="slidev-layout">
+  <Layout>
     <div class="my-auto">
       <slot />
     </div>
