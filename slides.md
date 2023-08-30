@@ -22,7 +22,7 @@ title: Learning Analytics of Grading Programming Exercises
             September 1<sup>st</sup>, 2023
         </p>
     </div>
-    <img src="/public/uhrenturm.png"/>
+    <img src="/uhrenturm.png"/>
 </div>
 
 <!--
@@ -89,7 +89,7 @@ level: 2
 # Old view
 
 <div class="relative">
-    <img src="/public/feedbackView.png"/>
+    <img src="/feedbackView.png"/>
     <svg class="absolute top-0 text-red" width="1132" height="503">
         <v-click>
             <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
@@ -110,7 +110,7 @@ level: 2
 # Object design - Groups
 
 <div class="px-16 relative">
-    <img class="w-full" src="/public/feedback-node.svg" />
+    <img class="w-full" src="/feedback-node.svg" />
 </div>
 
 ---
@@ -120,7 +120,7 @@ level: 2
 # Object design - Grouping and Sorting
 
 <div class="px-16 relative">
-    <img src="/public/feedback-item-service.png" />
+    <img src="/feedback-item-service.png" />
 </div>
 
 ---
