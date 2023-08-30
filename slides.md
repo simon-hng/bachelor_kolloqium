@@ -1,7 +1,7 @@
 ---
 theme: ./theme
 highlighter: shiki
-lineNumbers: false
+lineNumbers: true
 drawings:
   persist: false
 transition: slide-left
@@ -22,7 +22,7 @@ title: Learning Analytics of Grading Programming Exercises
             September 1<sup>st</sup>, 2023
         </p>
     </div>
-    <img src="assets/uhrenturm.png"/>
+    <img src="/public/uhrenturm.png"/>
 </div>
 
 <!--
@@ -89,7 +89,7 @@ level: 2
 # Old view
 
 <div class="relative">
-    <img src="assets/feedbackView.png"/>
+    <img src="/public/feedbackView.png"/>
     <svg class="absolute top-0 text-red" width="1132" height="503">
         <v-click>
             <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
@@ -109,7 +109,9 @@ level: 2
 
 # Object design - Groups
 
-<!-- TODO: insert figure 3.7-->
+<div class="px-16 relative">
+    <img class="w-full" src="/public/feedback-node.svg" />
+</div>
 
 ---
 level: 2
@@ -117,7 +119,36 @@ level: 2
 
 # Object design - Grouping and Sorting
 
-<!-- TODO: insert figure 3.6-->
+<div class="px-16 relative">
+    <img src="/public/feedback-item-service.png" />
+</div>
+
+---
+level: 2
+---
+
+<p>
+    Selecting the right <tt>feedbackItemService</tt><br />
+    <tt class="text-sm text-gray">feedback.component.ts:129-130</tt>
+</p>
+```ts{all|1|2-3|all}
+this.feedbackItemService = this.exerciseType === ExerciseType.PROGRAMMING 
+    ? this.injector.get(ProgrammingFeedbackItemService) 
+    : this.injector.get(FeedbackItemServiceImpl);
+
+this.initFeedbackInformation();
+```
+
+<p>
+    Using the service<br />
+    <tt class="text-sm text-gray">feedback.component.ts:188-189</tt>
+</p>
+```ts{all|1|3|4|all}
+initFeedbackInformation() {
+    ...
+    const feedbackItems = this.feedbackItemService.create(filteredFeedback, this.showTestDetails);
+    this.feedbackItemNodes = this.feedbackItemService.group(feedbackItems, this.exercise!);
+```
 
 ---
  layout: section
