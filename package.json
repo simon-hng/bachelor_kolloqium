@@ -2,7 +2,7 @@
   "name": "kolloqium",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "npx playwright install && slidev build",
     "dev": "slidev --open",
     "dev:remote": "slidev --open --remote",
     "export": "slidev export"
