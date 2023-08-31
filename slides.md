@@ -185,10 +185,19 @@ level: 2
 
 # Analysis Object Model
 
-<img src="/aom.png" class="h-95 px-16"/>
+<div class="relative">
+    <img src="/aom.png" class="h-95 px-16"/>
+    <svg class="absolute top-0 text-red" width="1000" height="500">
+    <div v-click="1">
+        <rect v-click-hide="2" x="60" y="125" width="140" height="250" fill="none" stroke="currentColor" stroke-width="5"/>
+    </div>
+    </svg>
+</div>
+
 
 <!-- 
-- combined AOM with PE, feedback, tasks, etc 
+- First click: Tasks
+
 -->
 
 ---
@@ -335,7 +344,7 @@ layout: section
 --
 
 ### Static Code Analysis
-- Automatically highlight SCA grading inconsistencies accros a course
+- Automatically highlight SCA grading inconsistencies across a course
 
 <!--
 - Students to not see how many points they would have received
