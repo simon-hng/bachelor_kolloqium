@@ -107,10 +107,10 @@ the required amount of information and detail
 
 # Objectives
 
-- Feedback View
+- <span style="color:orange"> Feedback View </span>
 - Programming Exercise Configuration Wizard
-- SCA Configuration Import
-- Task Grading Configuration
+- <span style="color:orange"> SCA Configuration Import </span>
+- <span style="color:orange"> Task Grading Configuration </span>
 - Automatic Grading Instructions
 
 ---
@@ -212,6 +212,42 @@ initFeedbackInformation() {
 
 ---
 
+# Grading - Instructor's Perspective
+
+### Current System
+
+<div class="relative">
+    <img src="/gradingPage.png" />
+</div>
+
+<div class="relative">
+    <img src="/sca-grading.png" />
+</div>
+
+<!--
+- Complicated Configuration
+- Based on test cases instead of tasks
+- No method of ensuring consistency across a course
+-->
+
+---
+
+# Analysis object model
+
+<div class="px-8 relative">
+    <img src="/sca import aom.png" />
+</div>
+
+<!-- combined AOM with PE, feedback, tasks, etc -->
+
+---
+
+# Improved user interface
+
+<!-- TODO Image task based grading, image SCA import -->
+
+---
+
 # Status
 
 #### Fully implemented
@@ -220,11 +256,24 @@ initFeedbackInformation() {
 - Programming Exercise Configuration Wizard ✅
 - Task Grading Configuration ✅
 
+
+#### Future Work
+
+- Show missed points for failing test cases
+- Automatically highlight SCA grading inconsistencies accros a course
+- 
+
 ---
 layout: section
 ---
 
 # Discussion
+
+### Other topics
+
+- test cases
+- exercise creation improvements
+
 
 ---
 
