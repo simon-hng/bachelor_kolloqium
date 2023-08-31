@@ -2,6 +2,8 @@
 theme: ./theme
 highlighter: shiki
 lineNumbers: true
+download: true
+presenter: dev
 drawings:
   persist: false
 transition: slide-left
