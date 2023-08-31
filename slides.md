@@ -71,9 +71,9 @@ First International Conference on Learning Analytics
 - Understanding the grading from instructors and tutors is difficult for students
     - What does this feedback mean? What is the impact on my grade?
 - Configuring grading did not reflect the way instructors want to grade exercises
+    - Steep learning curve as Artemis does have a lot of functions and is multi purpose
     - Grading based on test cases was to granular and fine tuned
-- Overall too time consuming; Instructors where not able to easily create the amount of exercises with
-the required amount of information and detail
+- Overall too time consuming; Instructors where not able to easily create the amount of exercises with the required amount of information and detail
 -->
 
 ---
@@ -87,12 +87,12 @@ the required amount of information and detail
             <p class="text-black">Transparency</p>
         </div>
         <div class="flex flex-col items-center">
-            <mdi-clock-fast class="w-20 h-20"/>
-            <p class="text-black">More Efficient</p>
-        </div>
-        <div class="flex flex-col items-center">
             <mdi-check-bold class="w-18 h-18"/>
             <p class="text-black">Exercise Quality</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <mdi-account-switch class="w-18 h-18"/>
+            <p class="text-black">Broader Uptake</p>
         </div>
     </v-clicks>
 </div>
@@ -101,6 +101,8 @@ the required amount of information and detail
 - Exercise Quality
   - Not only openness & transparency
   - Better and Fairer Grading
+-  We hope that these improvements will enhance broad uptake of the Artemis
+system and encourage more educators to make use of interactive learning.
 -->
 
 ---
@@ -203,7 +205,8 @@ this.initFeedbackInformation();
     Using the service<br />
     <tt class="text-sm text-gray">feedback.component.ts:188-189</tt>
 </p>
-```ts{all|1|3|4|all}
+
+```ts{all|1|3-4|all}
 initFeedbackInformation() {
     ...
     const feedbackItems = this.feedbackItemService.create(filteredFeedback, this.showTestDetails);
@@ -211,18 +214,22 @@ initFeedbackInformation() {
 ```
 
 ---
+layout: section
+---
 
-# Grading - Instructor's Perspective
+# Grading Configuration
 
-### Current System
+---
+layout: two-cols
+---
 
-<div class="relative">
-    <img src="/gradingPage.png" />
-</div>
+## Current System
 
-<div class="relative">
-    <img src="/sca-grading.png" />
-</div>
+<img src="/gradingPage.png" />
+
+::right::
+
+<img src="/iptPoints.png" />
 
 <!--
 - Complicated Configuration
@@ -232,7 +239,11 @@ initFeedbackInformation() {
 
 ---
 
-# Analysis object model
+<img src="/sca-grading.jpg" />
+
+---
+
+# Analysis Object Model
 
 <div class="px-8 relative">
     <img src="/sca import aom.png" />
@@ -242,7 +253,7 @@ initFeedbackInformation() {
 
 ---
 
-# Improved user interface
+# Improved User Interface
 
 <!-- TODO Image task based grading, image SCA import -->
 
@@ -250,18 +261,19 @@ initFeedbackInformation() {
 
 # Status
 
-#### Fully implemented
-
 - Feedback View ✅
 - Programming Exercise Configuration Wizard ✅
 - Task Grading Configuration ✅
+- SCA Grading Import ✅
+- Task Grading Configuration TODO: Find emoji
 
+--- 
 
-#### Future Work
+# Future Work
 
 - Show missed points for failing test cases
 - Automatically highlight SCA grading inconsistencies accros a course
-- 
+- TODO: Add feedback view sorting
 
 ---
 layout: section
@@ -269,11 +281,10 @@ layout: section
 
 # Discussion
 
-### Other topics
-
+<!--
 - test cases
 - exercise creation improvements
-
+-->
 
 ---
 
