@@ -43,7 +43,10 @@ First International Conference on Learning Analytics
 </sup>
 
 <!--
-- Add examples of learning analytics usages to notes
+- Analyzing exercise and course outcomes
+- Show difficulties e.g. regarding competency areas
+    - Show areas where they can improve
+- Students need to learn from their mistakes and improve upon them
 -->
 
 ---
@@ -68,12 +71,17 @@ First International Conference on Learning Analytics
 </div>
 
 <!--
-- Understanding the grading from instructors and tutors is difficult for students
-    - What does this feedback mean? What is the impact on my grade?
-- Configuring grading did not reflect the way instructors want to grade exercises
-    - Steep learning curve as Artemis does have a lot of functions and is multi purpose
-    - Grading based on test cases was to granular and fine tuned
-- Overall too time consuming; Instructors where not able to easily create the amount of exercises with the required amount of information and detail
+- Understanding the grading from instructors and tutors was difficult for students
+    - not intuitively clear what e.g. the feedback means
+    - they do not understand their mistakes
+    - they do not understand how their mistakes relate to their grade
+- Configuring grading was difficult due to multiple points
+    - did not reflect the way instructors want to grade exercises    
+    - steep learning curve as Artemis does have a lot of functions and is multi purpose
+    - grading based on test cases was to granular and fine tuned
+- Overall too time consuming; 
+    - Instructors where not able to easily create the amount of exercises
+    - easily achieve quality in regards to information and detail
 -->
 
 ---
@@ -98,7 +106,12 @@ First International Conference on Learning Analytics
 </div>
 
 <!--
+- Resolving the aforementioned problems would bring multiple benefits
+- Students would better understand exercise, their grading and where to improve
+   - Understand instructors wants and improve
+   - Given students easier understanding leads to a more open learning environment
 - Exercise Quality
+  - Instructors can easier focus on their exercise at hand
   - Not only openness & transparency
   - Better and Fairer Grading
 -  We hope that these improvements will enhance broad uptake of the Artemis
@@ -114,6 +127,97 @@ system and encourage more educators to make use of interactive learning.
 - <span class="text-[#0065bd]"> SCA Configuration Import </span>
 - <span class="text-[#0065bd]"> Task Grading Configuration </span>
 - Automatic Grading Instructions
+
+<!--
+- Feedback View: Improve understanding of students by adding additional context to feedback
+- Create a Wizard where settings are displayed step by step, deceasing complexity in configuring exercises and help instructors help relevant options
+- SCA Efficiency, Consistency, Usability
+- Task Grading Configuration, more intuitive, spend less time for too granular settings, achieve the quality of exercise they want
+- Investigate the idea of automatic grouping of feedback into grading instructions: Saving time, understanding mistakes as group and grading them
+
+-->
+
+---
+layout: section
+---
+
+# Grading Configuration
+
+
+---
+layout: two-cols
+level: 2
+---
+
+## Old System
+
+<div class="mt-4">
+    <img src="/gradingPage.png" />
+</div>
+
+::right::
+
+<div class="overflow-hidden h-72 mt-14">
+    <img src="/iptPoints.png" />
+</div>
+
+<!--
+- Explain image on left
+    - What are weights: Fractions of the grade
+    - Complicated Configuration
+- Based on test cases instead of tasks: Too granular
+- Explain image on right
+- No method of ensuring consistency across a course
+-->
+
+---
+
+<div class="h-96 overflow-hidden">
+    <img src="/sca-grading.jpg" />
+</div>
+
+<!--
+- Grading is good here; not too granular
+- Missing feature for enforcing consistency
+-->
+
+---
+
+# Analysis Object Model
+
+<img src="/aom.png" class="h-95 px-16"/>
+
+<!-- 
+- combined AOM with PE, feedback, tasks, etc 
+-->
+
+---
+
+# Improved User Interface
+
+<img src="/taskui.jpg" class="h-95"/>
+
+<!--
+- Collapsible tasks
+- Sorting by task and tests
+- Inputs are aggregated intelligently
+-->
+
+---
+layout: two-cols
+---
+
+# Improved User Interface
+
+<div class="overflow-hidden h-96 mt-4">
+    <img src="/import-configuration-button.png" />
+</div>
+
+::right::
+
+<div class="overflow-hidden h-96 mt-4">
+    <img src="/sca-import-modal.jpg" class="mt-14"/>
+</div>
 
 ---
 layout: section
@@ -143,6 +247,9 @@ level: 2
     - Limited to only Points and Deductions
 - Correct feedback is aggregated into single feedback
     - Works well when working on exercise but does not work well when reviewing exercise
+    - Essentially two use cases:
+        - Interactive Learning by pushing / updating our submission and having a look at the feedback; Works well with this view
+        - Seing all the feedback at once after the deadline and reviewing our submission with no future changes to it.
     - "What did I do wrong? What did I do well?"
 - Important information is shown in the bottom
 -->
@@ -186,93 +293,6 @@ level: 2
 -->
 
 ---
-level: 2
----
-
-<p>
-    Selecting the right <tt>feedbackItemService</tt><br />
-    <tt class="text-sm text-gray">feedback.component.ts:129-130</tt>
-</p>
-```ts{all|1|2-3|all}
-this.feedbackItemService = this.exerciseType === ExerciseType.PROGRAMMING 
-    ? this.injector.get(ProgrammingFeedbackItemService) 
-    : this.injector.get(FeedbackItemServiceImpl);
-
-this.initFeedbackInformation();
-```
-
-<p>
-    Using the service<br />
-    <tt class="text-sm text-gray">feedback.component.ts:188-189</tt>
-</p>
-
-```ts{all|1|3-4|all}
-initFeedbackInformation() {
-    ...
-    const feedbackItems = this.feedbackItemService.create(filteredFeedback, this.showTestDetails);
-    this.feedbackItemNodes = this.feedbackItemService.group(feedbackItems, this.exercise!);
-```
-
----
-layout: section
----
-
-# Grading Configuration
-
----
-layout: two-cols
-level: 2
----
-
-## Old System
-
-<div class="overflow-hidden h-72 mt-4">
-    <img src="/iptPoints.png" />
-</div>
-
-::right::
-
-<img src="/gradingPage.png" class="mt-14"/>
-
-<!--
-- Complicated Configuration
-- Based on test cases instead of tasks
-- No method of ensuring consistency across a course
--->
-
----
-
-<img src="/sca-grading.jpg" />
-
----
-
-# Analysis Object Model
-
-<img src="/aom.png" class="h-95"/>
-
-<!-- combined AOM with PE, feedback, tasks, etc -->
-
----
-
-# Improved User Interface
-
-<img src="/taskui.jpg" class="h-95"/>
-
----
-layout: two-cols
----
-
-# Improved User Interface
-
-<div class="overflow-hidden h-72 mt-4">
-    <img src="/import-configuration-button.png" />
-</div>
-
-::right::
-
-<img src="/sca-import-modal.jpg" class="mt-14"/>
-
----
 
 # Status
 
@@ -282,13 +302,22 @@ layout: two-cols
 - SCA Grading Import ✅
 - Task Grading Configuration TODO: Find emoji
 
---- 
+---
 
 # Future Work
 
-- Show missed points for failing test cases
+- Feedback View: Show missed points for failing test case feedback
+- Automatically sort feedback within groups
 - Automatically highlight SCA grading inconsistencies accros a course
-- TODO: Add feedback view sorting
+
+<!--
+- Students to not see how many points they would have received
+- Import grading is a good starting point
+- Artemis should help instructors by highlighting inconsistencies
+- Intelligent sorting of feedback
+    - e.g. most recent feedback fist
+    - order test case feedback in the order they need to be implemented
+-->
 
 ---
 layout: section
