@@ -109,10 +109,10 @@ system and encourage more educators to make use of interactive learning.
 
 # Objectives
 
-- <span style="color:orange"> Feedback View </span>
+- <span class="text-[#0065bd]"> Feedback View </span>
 - Programming Exercise Configuration Wizard
-- <span style="color:orange"> SCA Configuration Import </span>
-- <span style="color:orange"> Task Grading Configuration </span>
+- <span class="text-[#0065bd]"> SCA Configuration Import </span>
+- <span class="text-[#0065bd]"> Task Grading Configuration </span>
 - Automatic Grading Instructions
 
 ---
@@ -221,15 +221,18 @@ layout: section
 
 ---
 layout: two-cols
+level: 2
 ---
 
-## Current System
+## Old System
 
-<img src="/gradingPage.png" />
+<div class="overflow-hidden h-72 mt-4">
+    <img src="/iptPoints.png" />
+</div>
 
 ::right::
 
-<img src="/iptPoints.png" />
+<img src="/gradingPage.png" class="mt-14"/>
 
 <!--
 - Complicated Configuration
