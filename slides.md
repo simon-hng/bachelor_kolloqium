@@ -248,9 +248,7 @@ level: 2
 
 # Analysis Object Model
 
-<div class="px-8 relative">
-    <img src="/sca import aom.png" />
-</div>
+<img src="/aom.png" class="h-95"/>
 
 <!-- combined AOM with PE, feedback, tasks, etc -->
 
@@ -258,7 +256,21 @@ level: 2
 
 # Improved User Interface
 
-<!-- TODO Image task based grading, image SCA import -->
+<img src="/taskui.jpg" class="h-95"/>
+
+---
+layout: two-cols
+---
+
+# Improved User Interface
+
+<div class="overflow-hidden h-72 mt-4">
+    <img src="/import-configuration-button.png" />
+</div>
+
+::right::
+
+<img src="/sca-import-modal.jpg" class="mt-14"/>
 
 ---
 
