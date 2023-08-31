@@ -49,28 +49,24 @@ First International Conference on Learning Analytics
 # Problem
 
 <div class="grid grid-cols-3 color-[#0065bd] items-center justify-center mt-32">
-    <v-click>
+    <v-clicks>
         <div class="flex flex-col items-center">
-            <mdi-head-snowflake class="w-22 h-22"/>
-            <p class="text-black">Student Understanding</p>
+            <mdi-emoticon-confused class="w-20 h-20"/>
+            <p class="text-black">Student Confusion</p>
         </div>
-    </v-click>
-    <v-click>
         <div class="flex flex-col items-center">
             <mdi-cog class="w-20 h-20"/>
             <p class="text-black">Difficult Configuration</p>
         </div>
-    </v-click>
-    <v-click>
         <div class="flex flex-col items-center">
             <mdi-clock class="w-20 h-20"/>
             <p class="text-black">Time Consuming</p>
         </div>
-    </v-click>
+    </v-clicks>
 </div>
 
 <!--
-- Understanding the grading from instructors and tutors is difficult for student
+- Understanding the grading from instructors and tutors is difficult for students
     - What does this feedback mean? What is the impact on my grade?
 - Configuring grading did not reflect the way instructors want to grade exercises
     - Grading based on test cases was to granular and fine tuned
@@ -81,6 +77,29 @@ the required amount of information and detail
 ---
 
 # Motivation
+
+<div class="grid grid-cols-3 color-[#0065bd] items-center justify-center mt-32">
+    <v-clicks>
+        <div class="flex flex-col items-center">
+            <mdi-eye class="w-20 h-20"/>
+            <p class="text-black">Transparency</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <mdi-clock-fast class="w-20 h-20"/>
+            <p class="text-black">More Efficient</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <mdi-check-bold class="w-18 h-18"/>
+            <p class="text-black">Exercise Quality</p>
+        </div>
+    </v-clicks>
+</div>
+
+<!--
+- Exercise Quality
+  - Not only openness & transparency
+  - Better and Fairer Grading
+-->
 
 ---
 
@@ -107,17 +126,22 @@ level: 2
 <div class="relative">
     <img src="/feedbackView.png"/>
     <svg class="absolute top-0 text-red" width="1000" height="500">
-        <v-click>
+        <v-clicks>
             <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
-        </v-click>
-        <v-click>
             <rect x="5" y="180" width="860" height="110" fill="none" stroke="currentColor" stroke-width="5"/>
-        </v-click>
-        <v-click>
             <rect x="5" y="290" width="280" height="30" fill="none" stroke="currentColor" stroke-width="5"/>
-        </v-click>
+        </v-clicks>
     </svg>
 </div>
+
+<!--
+- Chart showing composition of final grade
+    - Limited to only Points and Deductions
+- Correct feedback is aggregated into single feedback
+    - Works well when working on exercise but does not work well when reviewing exercise
+    - "What did I do wrong? What did I do well?"
+- Important information is shown in the bottom
+-->
 
 ---
  layout: section
@@ -135,6 +159,14 @@ level: 2
     <img class="w-full" src="/feedback-node.svg" />
 </div>
 
+<!--
+- Similiar to composite pattern
+- Except relation between group and node
+- Reason: extend functionality
+    - Group not only by `correct`,`info`,`wrong`, etc
+    - But also by groups appropriate for exercise type e.g. for programming: `tasks`
+-->
+
 ---
 level: 2
 ---
@@ -144,6 +176,10 @@ level: 2
 <div class="px-16 relative">
     <img src="/feedback-item-service.png" />
 </div>
+
+<!--
+- Similar to strategy pattern
+-->
 
 ---
 level: 2
@@ -182,6 +218,8 @@ initFeedbackInformation() {
 - Programming Exercise Configuration Wizard ✅
 - Task Grading Configuration ✅
 
+---
+layout: section
 ---
 
 # Discussion
