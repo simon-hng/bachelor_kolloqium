@@ -264,6 +264,23 @@ level: 2
 level: 2
 ---
 
+# Subsystem Decomposition
+
+<div class="px-16 relative">
+    <img class="h-96" src="/feedback-subsystem.svg" />
+</div>
+
+<!--
+- Refactor existing implementation into multiple components/services, God-class antipattern
+- UI Layer only responsible for viewing, templating, styling, calling functions
+- Format data of Feedback Items; Chart library understands
+- Feedback Item Service responsible for Formatting Feedback (Server) into something more suitable for UI needs
+- Feedback/Result service communicating with server
+-->
+---
+level: 2
+---
+
 # Object design - Groups
 
 <div class="px-16 relative">
@@ -293,6 +310,12 @@ level: 2
 -->
 
 ---
+layout: section
+---
+
+# Status
+
+---
 
 # Status
 
@@ -300,14 +323,18 @@ level: 2
 - Programming Exercise Configuration Wizard ✅
 - Task Grading Configuration ✅
 - SCA Grading Import ✅
-- Task Grading Configuration TODO: Find emoji
-
+- Automatic Grading Instructions 🚧
 ---
 
 # Future Work
 
-- Feedback View: Show missed points for failing test case feedback
+### Feedback View
+- Show missed points for failing test case feedback
 - Automatically sort feedback within groups
+
+--
+
+### Static Code Analysis
 - Automatically highlight SCA grading inconsistencies accros a course
 
 <!--
