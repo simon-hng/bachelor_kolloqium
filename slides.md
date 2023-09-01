@@ -28,7 +28,9 @@ title: Learning Analytics of Grading Programming Exercises
 </div>
 
 <!--
-- Extended Artemis's capabilities and implementations of the concepts of learning analytics
+- Bachelor's Thesis Intermediate Presentation
+- Learning Analytics of Grading Programming Exercises
+- Extended Artemis's capabilities and current implementations of the concepts of learning analytics with focus on programming exercises
 -->
 
 ---
@@ -43,6 +45,7 @@ First International Conference on Learning Analytics
 </sup>
 
 <!--
+- Conference held in 2011
 - Analyzing exercise and course outcomes
 - Show difficulties e.g. regarding competency areas
     - Show areas where they can improve
@@ -71,14 +74,14 @@ First International Conference on Learning Analytics
 </div>
 
 <!--
-- Understanding the grading from instructors and tutors was difficult for students
+- Understanding the grading and feedback was difficult for students
     - not intuitively clear what e.g. the feedback means
     - they do not understand their mistakes
     - they do not understand how their mistakes relate to their grade
-- Configuring grading was difficult due to multiple points
-    - did not reflect the way instructors want to grade exercises    
+- Configuring grading was difficult due to multiple points  
     - steep learning curve as Artemis does have a lot of functions and is multi purpose
-    - grading based on test cases was to granular and fine tuned
+    - did not reflect the way instructors want to grade exercises  
+    - task based grading - Lucas will tell you more about that later
 - Overall too time consuming; 
     - Instructors where not able to easily create the amount of exercises
     - easily achieve quality in regards to information and detail
@@ -130,11 +133,10 @@ system and encourage more educators to make use of interactive learning.
 
 <!--
 - Feedback View: Improve understanding of students by adding additional context to feedback
-- Create a Wizard where settings are displayed step by step, deceasing complexity in configuring exercises and help instructors help relevant options
-- SCA Efficiency, Consistency, Usability
+- Create a Configuration Wizard where settings are displayed step by step, deceasing complexity in configuring exercises by conceptionally grouping similar settings and help instructors find relevant options
+- Feature to import Static Code Analysis: SCA Efficiency, Consistency, Usability
 - Task Grading Configuration, more intuitive, spend less time for too granular settings, achieve the quality of exercise they want
-- Investigate the idea of automatic grouping of feedback into grading instructions: Saving time, understanding mistakes as group and grading them
-
+- Investigate the idea of automatic grouping feedback into grading instructions: Step after exercise created and first submission in. Consistency, Saving time, instructors understand mistakes as group and grading accordingly and fairly
 -->
 
 ---
@@ -255,7 +257,6 @@ level: 2
 - Chart showing composition of final grade
     - Limited to only Points and Deductions
 - Correct feedback is aggregated into single feedback
-    - Works well when working on exercise but does not work well when reviewing exercise
     - Essentially two use cases:
         - Interactive Learning by pushing / updating our submission and having a look at the feedback; Works well with this view
         - Seing all the feedback at once after the deadline and reviewing our submission with no future changes to it.
@@ -264,10 +265,15 @@ level: 2
 -->
 
 ---
- layout: section
+layout: section
 ---
 
 # Live Demo
+
+<!--
+- Show programming
+- Show modelling
+-->
 
 ---
 level: 2
@@ -301,7 +307,7 @@ level: 2
 - Except relation between group and node
 - Reason: extend functionality
     - Group not only by `correct`,`info`,`wrong`, etc
-    - But also by groups appropriate for exercise type e.g. for programming: `tasks`
+    - But also by groups appropriate for exercise type e.g. for programming: `tasks
 -->
 
 ---
