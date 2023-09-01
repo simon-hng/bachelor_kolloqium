@@ -13,7 +13,7 @@ title: Learning Analytics of Grading Programming Exercises
 <div class="grid grid-cols-2">
     <div>
         <h1>Learning Analytics of Grading Programming Exercises</h1>
-        <p class="text-[#0065bd] text-xl">Bachelor’s Thesis Intermediate Presentation</p>
+        <p class="text-[#0065bd] text-xl">Bachelor’s Thesis Final Presentation</p>
         <div class="my-12">
             <p class="font-bold">Simon Huang and Lucas Welscher</p>
         </div>
@@ -28,7 +28,7 @@ title: Learning Analytics of Grading Programming Exercises
 </div>
 
 <!--
-- Bachelor's Thesis Intermediate Presentation
+- Bachelor's Thesis Final Presentation
 - Learning Analytics of Grading Programming Exercises
 - Extended Artemis's capabilities and current implementations of the concepts of learning analytics with focus on programming exercises
 -->
@@ -153,13 +153,13 @@ level: 2
 
 ## Old System
 
-<div class="mt-4">
+<div class="mt-4 shadow-lg">
     <img src="/gradingPage.png" />
 </div>
 
 ::right::
 
-<div class="overflow-hidden h-72 mt-14">
+<div class="overflow-hidden h-72 mt-14 shadow-lg">
     <img src="/iptPoints.png" />
 </div>
 
@@ -174,7 +174,7 @@ level: 2
 
 ---
 
-<div class="h-96 overflow-hidden">
+<div class="h-96 overflow-hidden shadow-lg">
     <img src="/sca-grading.jpg" />
 </div>
 
@@ -188,7 +188,7 @@ level: 2
 # Analysis Object Model
 
 <div class="relative">
-    <img src="/aom2.png" class="h-94 px-16"/>
+    <img src="/aom2.png" class="h-94 px-16 shadow-lg"/>
 </div>
 
 
@@ -201,7 +201,7 @@ level: 2
 
 # Improved User Interface
 
-<img src="/taskui.jpg" class="h-95"/>
+<img src="/taskui.jpg" class="h-95 shadow-lg"/>
 
 <!--
 - Collapsible tasks
@@ -215,14 +215,14 @@ layout: two-cols
 
 # Improved User Interface
 
-<div class="overflow-hidden h-96 mt-4">
+<div class="overflow-hidden h-96 mt-4 shadow-lg">
     <img src="/import-configuration-button.png" />
 </div>
 
 ::right::
 
-<div class="overflow-hidden h-96 mt-4">
-    <img src="/sca-import-modal.jpg" class="mt-14"/>
+<div class="overflow-hidden h-96 mt-14 shadow-lg">
+    <img src="/sca-import-modal.jpg" />
 </div>
 
 ---
@@ -237,7 +237,7 @@ level: 2
 
 # Old View
 
-<div class="relative">
+<div class="relative shadow-lg">
     <img src="/feedbackView.png"/>
     <svg class="absolute top-0 text-red" width="1000" height="500">
         <v-clicks>
@@ -276,8 +276,8 @@ level: 2
 
 # Subsystem Decomposition
 
-<div class="px-16 relative">
-    <img class="h-96" src="/feedback-subsystem.svg" />
+<div class="p-4 mx-16 relative shadow-lg">
+    <img class="h-80" src="/feedback-subsystem.svg" />
 </div>
 
 <!--
@@ -293,7 +293,7 @@ level: 2
 
 # Object design - Groups
 
-<div class="px-16 relative">
+<div class="p-4 mx-16 shadow-lg relative">
     <img class="w-full" src="/feedback-node.svg" />
 </div>
 
@@ -311,7 +311,7 @@ level: 2
 
 # Object design - Grouping and Sorting
 
-<div class="px-16 relative">
+<div class="p-4 mx-16 shadow-lg relative">
     <img src="/feedback-item-service.png" />
 </div>
 
@@ -367,6 +367,3 @@ layout: section
 - exercise creation improvements
 -->
 
----
-
-# Bibliography
