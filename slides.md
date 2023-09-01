@@ -188,12 +188,7 @@ level: 2
 # Analysis Object Model
 
 <div class="relative">
-    <img src="/aom.png" class="h-95 px-16"/>
-    <svg class="absolute top-0 text-red" width="1000" height="500">
-    <div v-click="1">
-        <rect v-click-hide="2" x="60" y="125" width="140" height="250" fill="none" stroke="currentColor" stroke-width="5"/>
-    </div>
-    </svg>
+    <img src="/aom2.png" class="h-94 px-16"/>
 </div>
 
 
