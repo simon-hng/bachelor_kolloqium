@@ -9,24 +9,9 @@ drawings:
 transition: slide-left
 title: Learning Analytics of Grading Programming Exercises
 author: Simon Huang, Lucas Welscher
+type: Bachelor's Thesis Final Presentation
+date: 09-01-2023
 ---
-
-<div class="grid grid-cols-2">
-    <div>
-        <h1>{{ $slidev.configs.title }}</h1>
-        <p class="text-tum-blue text-xl">Bachelor’s Thesis Final Presentation</p>
-        <div class="my-12">
-            <p class="font-bold">{{ $slidev.configs.author }}</p>
-        </div>
-        <p>
-            Technical University of Munich<br/>
-            School of Computation, Information and Technology<br/>
-            Chair for Applied Software Engineering<br/>
-            September 1<sup>st</sup>, 2023
-        </p>
-    </div>
-    <img src="/uhrenturm.png"/>
-</div>
 
 <!--
 - Bachelor's Thesis Final Presentation

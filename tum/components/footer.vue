@@ -5,7 +5,8 @@
   >
     <div class="flex justify-between">
       <p>
-        {{ $slidev.configs.author }} | {{ $slidev.configs.title }} | 01/09/2023
+        {{ $slidev.configs.author }} | {{ $slidev.configs.title }} |
+        {{ new Date($slidev.configs.date).toDateString() }}
       </p>
       <SlideCurrentNo />
     </div>
