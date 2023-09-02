@@ -13,10 +13,10 @@ author: Simon Huang, Lucas Welscher
 
 <div class="grid grid-cols-2">
     <div>
-        <h1>Learning Analytics of Grading Programming Exercises</h1>
+        <h1>{{ $slidev.configs.title }}</h1>
         <p class="text-tum-blue text-xl">Bachelor’s Thesis Final Presentation</p>
         <div class="my-12">
-            <p class="font-bold">Simon Huang and Lucas Welscher</p>
+            <p class="font-bold">{{ $slidev.configs.author }}</p>
         </div>
         <p>
             Technical University of Munich<br/>
@@ -154,7 +154,7 @@ level: 2
 
 ## Old System
 
-<div class="mt-4 shadow-lg">
+<div class="overflow-hidden mt-5 shadow-lg h-72">
     <img src="/gradingPage.png" />
 </div>
 
@@ -175,7 +175,9 @@ level: 2
 
 ---
 
-<div class="h-96 overflow-hidden shadow-lg">
+## Old System
+
+<div class="h-90 overflow-hidden shadow-lg">
     <img src="/sca-grading.jpg" />
 </div>
 
@@ -189,7 +191,7 @@ level: 2
 # Analysis Object Model
 
 <div class="relative">
-    <img src="/aom2.png" class="h-94 px-16 shadow-lg"/>
+    <img src="/aom2.png" class="h-90 px-16"/>
 </div>
 
 
@@ -202,7 +204,9 @@ level: 2
 
 # Improved User Interface
 
-<img src="/taskui.jpg" class="h-95 shadow-lg"/>
+<div class="overflow-hidden h-90 shadow-lg mx-18">
+    <img src="/taskui.jpg" class=""/>
+</div>
 
 <!--
 - Collapsible tasks
@@ -216,13 +220,13 @@ layout: two-cols
 
 # Improved User Interface
 
-<div class="overflow-hidden h-96 mt-4 shadow-lg">
+<div class="overflow-hidden h-90 mt-5 shadow-lg">
     <img src="/import-configuration-button.png" />
 </div>
 
 ::right::
 
-<div class="overflow-hidden h-96 mt-14 shadow-lg">
+<div class="overflow-hidden h-90 mt-14 shadow-lg">
     <img src="/sca-import-modal.jpg" />
 </div>
 
@@ -238,13 +242,13 @@ level: 2
 
 # Old View
 
-<div class="relative shadow-lg">
+<div class="relative shadow-lg mx-8">
     <img src="/feedbackView.png"/>
-    <svg class="absolute top-0 text-red" width="1000" height="500">
+    <svg class="w-full absolute top-0 text-red" viewBox="0 0 1000 500">
         <v-clicks>
-            <rect x="5" y="60" width="860" height="105" fill="none" stroke="currentColor" stroke-width="5"/>
-            <rect x="5" y="180" width="860" height="110" fill="none" stroke="currentColor" stroke-width="5"/>
-            <rect x="5" y="290" width="280" height="30" fill="none" stroke="currentColor" stroke-width="5"/>
+            <rect x="5" y="65" width="990" height="125" fill="none" stroke="currentColor" stroke-width="3"/>
+            <rect x="5" y="200" width="990" height="135" fill="none" stroke="currentColor" stroke-width="3"/>
+            <rect x="5" y="340" width="321" height="25" fill="none" stroke="currentColor" stroke-width="3"/>
         </v-clicks>
     </svg>
 </div>
@@ -277,8 +281,8 @@ level: 2
 
 # Subsystem Decomposition
 
-<div class="p-4 mx-16 relative shadow-lg">
-    <img class="h-80" src="/feedback-subsystem.svg" />
+<div class="p-4 mx-16 relative">
+    <img class="h-85" src="/feedback-subsystem.svg" />
 </div>
 
 <!--
@@ -294,7 +298,7 @@ level: 2
 
 # Object design - Groups
 
-<div class="p-4 mx-16 shadow-lg relative">
+<div class="p-4 mx-16 relative">
     <img class="w-full" src="/feedback-node.svg" />
 </div>
 
@@ -312,7 +316,7 @@ level: 2
 
 # Object design - Grouping and Sorting
 
-<div class="p-4 mx-16 shadow-lg relative">
+<div class="p-4 mx-16 relative">
     <img src="/feedback-item-service.png" />
 </div>
 
