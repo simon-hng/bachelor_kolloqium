@@ -18,7 +18,7 @@ const fill = computed(() => {
 
 <template>
   <svg
-    class="h-8"
+    class="h-8 duration-500"
     :class="fill"
     :style="style"
     viewBox="-16.014 -31 408.16 212.46684"

@@ -8,6 +8,7 @@ drawings:
   persist: false
 transition: slide-left
 title: Learning Analytics of Grading Programming Exercises
+author: Simon Huang, Lucas Welscher
 ---
 
 <div class="grid grid-cols-2">

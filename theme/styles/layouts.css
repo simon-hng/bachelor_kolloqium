@@ -1,5 +1,5 @@
 .slidev-layout {
-  @apply font-[arial];
+  @apply font-[arial] pt-24;
 
   h1 {
     @apply text-3xl;

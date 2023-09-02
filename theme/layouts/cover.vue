@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import Layout from "./shared/layout.vue";
-</script>
-
 <template>
-  <Layout class="cover">
+  <div class="slidev-layout cover">
     <div class="my-auto w-full">
       <slot />
     </div>
-  </Layout>
+  </div>
 </template>
