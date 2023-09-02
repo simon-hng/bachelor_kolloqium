@@ -14,7 +14,7 @@ author: Simon Huang, Lucas Welscher
 <div class="grid grid-cols-2">
     <div>
         <h1>Learning Analytics of Grading Programming Exercises</h1>
-        <p class="text-[#0065bd] text-xl">Bachelor’s Thesis Final Presentation</p>
+        <p class="text-tum-blue text-xl">Bachelor’s Thesis Final Presentation</p>
         <div class="my-12">
             <p class="font-bold">Simon Huang and Lucas Welscher</p>
         </div>
@@ -57,7 +57,7 @@ First International Conference on Learning Analytics
 
 # Problem
 
-<div class="grid grid-cols-3 color-[#0065bd] items-center justify-center mt-32">
+<div class="grid grid-cols-3 color-tum-blue items-center justify-center mt-32">
     <v-clicks>
         <div class="flex flex-col items-center">
             <mdi-emoticon-confused class="w-20 h-20"/>
@@ -92,7 +92,7 @@ First International Conference on Learning Analytics
 
 # Motivation
 
-<div class="grid grid-cols-3 color-[#0065bd] items-center justify-center mt-32">
+<div class="grid grid-cols-3 color-tum-blue items-center justify-center mt-32">
     <v-clicks>
         <div class="flex flex-col items-center">
             <mdi-eye class="w-20 h-20"/>
@@ -126,10 +126,10 @@ system and encourage more educators to make use of interactive learning.
 
 # Objectives
 
-- <span class="text-[#0065bd]"> Feedback View </span>
+- <span class="text-tum-blue"> Feedback View </span>
 - Programming Exercise Configuration Wizard
-- <span class="text-[#0065bd]"> SCA Configuration Import </span>
-- <span class="text-[#0065bd]"> Task Grading Configuration </span>
+- <span class="text-tum-blue"> SCA Configuration Import </span>
+- <span class="text-tum-blue"> Task Grading Configuration </span>
 - Automatic Grading Instructions
 
 <!--
