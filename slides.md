@@ -1,5 +1,5 @@
 ---
-theme: ./theme
+theme: ./tum
 highlighter: shiki
 lineNumbers: true
 download: true
